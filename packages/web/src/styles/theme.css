@@ -1,0 +1,142 @@
+* { box-sizing: border-box; }
+
+html, body, #root {
+  margin: 0;
+  height: 100%;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-family: system-ui, -apple-system, sans-serif;
+}
+
+.app-shell {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 12px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+  flex-wrap: wrap;
+}
+
+.toolbar-group {
+  display: flex;
+  gap: 6px;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.sidebar {
+  width: 240px;
+  background: #1e293b;
+  border-right: 1px solid #334155;
+  padding: 12px;
+  overflow-y: auto;
+}
+
+.canvas-area {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+}
+
+.palette-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 8px;
+  margin-bottom: 6px;
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.palette-item:hover {
+  background: #475569;
+}
+
+.constraints-panel {
+  margin-top: 20px;
+  padding-top: 12px;
+  border-top: 1px solid #334155;
+}
+
+.constraints-panel .hint {
+  font-size: 12px;
+  color: #94a3b8;
+}
+
+.checkbox-row {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 8px 0;
+}
+
+.orientation-row {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+button {
+  background: #334155;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+  background: #475569;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+button.danger {
+  background: #7f1d1d;
+  border-color: #991b1b;
+}
+
+.arrange-button {
+  background: #0ea5e9;
+  border-color: #0284c7;
+  font-weight: 600;
+}
+
+.board-size-control {
+  display: flex;
+  gap: 10px;
+}
+
+.board-size-control label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 13px;
+}
+
+.board-size-control input {
+  width: 56px;
+  padding: 4px;
+  background: #0f172a;
+  color: #e2e8f0;
+  border: 1px solid #475569;
+  border-radius: 4px;
+}

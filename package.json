@@ -1,0 +1,20 @@
+{
+  "name": "perfboard-layout-tool",
+  "private": true,
+  "version": "0.1.0",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=packages/web",
+    "build": "npm run build --workspace=packages/web",
+    "lint": "eslint . --ext .ts,.tsx",
+    "test": "npm run test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3",
+    "typescript": "^5.5.4"
+  }
+}

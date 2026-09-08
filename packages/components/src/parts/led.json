@@ -1,0 +1,10 @@
+{
+  "id": "led",
+  "displayName": "LED",
+  "footprintType": "axial-2pin",
+  "size": { "width": 2, "height": 1 },
+  "pins": [
+    { "id": "anode", "name": "Anode", "netClass": "signal", "offset": { "x": 0, "y": 0 } },
+    { "id": "cathode", "name": "Cathode", "netClass": "signal", "offset": { "x": 2, "y": 0 } }
+  ]
+}
